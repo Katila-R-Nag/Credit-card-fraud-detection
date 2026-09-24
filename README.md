@@ -17,11 +17,7 @@ transactions, ~492 fraud cases, PCA-anonymized features V1–V28 + Time + Amount
    kaggle datasets download -d mlg-ulb/creditcardfraud -p data/
    unzip data/creditcardfraud.zip -d data/
    ```
-2. Place the resulting `creditcard.csv` into the `data/` folder here.
-
-(I can't download this myself — Kaggle isn't reachable from my sandboxed environment — so this
-one step needs to happen on your machine. Everything after this, I can help you build directly.)
-
+   
 ## Roadmap (matches the 8-step plan)
 1. **Source data + add original layer** — `src/simulate_stream.py` generates a synthetic
    "live transaction stream" on top of the static dataset, so you're not just working with a
